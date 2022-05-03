@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css">-->
+</head>
+<body>
+    <h2>Register Form</h2>
+    <form action="/register/" method="post">
+        {% csrf_token %}
+        <label>First Name:</label>
+        <input type="text" name="f_name" placeholder="Adam"><br>
+        <label>Last Name:</label>
+        <input type="text" name="l_name" placeholder="Smit"><br>
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="adams"><br>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="adam@mail.ru"><br>
+        <label>Age:</label>
+        <input type="number" name="age" placeholder="1-99"><br>
+        <label>Gender:</label>
+        <select type="text" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+        <label>Repeat password:</label>
+        <input type="password" name="confirm"><br>
+        <button type="submit">Submit</button>
+    </form>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        h2{
+            text-align: center; 
+            margin-top: 160px;
+        }
+        form{
+            text-align: center;
+        }
+        input{
+            font-size: 18px;
+            margin: 5px;
+        }
+        select{
+            font-size: 18px;
+            margin: 5px;
+        }
+        button{
+            font-size: 16px;
+        }
+    </style>
+</body>
+</html>
